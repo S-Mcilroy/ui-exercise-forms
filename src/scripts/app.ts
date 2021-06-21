@@ -21,8 +21,6 @@ document.querySelector(".reset-button").addEventListener("click", async () => {
       }
     );
 
-    console.log("Repsonse: ", response);
-
     if (response.status === 200) {
       successContainer.classList.toggle("hide");
     } else {
@@ -37,3 +35,7 @@ function validateEmail(email) {
   const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return regex.test(String(email).toLowerCase());
 }
+
+document.querySelector(".help-secion-link").addEventListener("click", () => {
+  helpSectionContainer.classList.toggle("hide");
+});
