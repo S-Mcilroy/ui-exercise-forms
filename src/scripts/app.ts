@@ -10,8 +10,6 @@ document.querySelector(".reset-button").addEventListener("click", async () => {
   if (validateEmail(emailInput)) {
     let body = { email: emailInput };
 
-    console.log("BODY: ", body);
-
     const response = await fetch(
       "http://localhost:3005/customer/account/resetPassword",
       {
