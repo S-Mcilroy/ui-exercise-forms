@@ -1,4 +1,4 @@
-const helpSectionContainer = document.querySelector(".help-section-conatainer");
+const helpSectionContainer = document.querySelector(".help-section-container");
 const errorContainer = document.querySelector(".error-container");
 const successContainer = document.querySelector(".success-container");
 const emailInputBox = document.querySelector("#input-box") as HTMLInputElement;
@@ -36,6 +36,6 @@ function validateEmail(email) {
   return regex.test(String(email).toLowerCase());
 }
 
-document.querySelector(".help-secion-link").addEventListener("click", () => {
+document.querySelector(".help-section-link").addEventListener("click", () => {
   helpSectionContainer.classList.toggle("hide");
 });
